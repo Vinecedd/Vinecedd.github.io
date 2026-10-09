@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tianhang (Victor) Liu · 中文</title>
+<meta name="description" content="Tianhang (Victor) Liu：多伦多大学电气工程。供电设计、PCB 设计与硬件验证。">
+<meta property="og:title" content="Tianhang (Victor) Liu">
+<meta property="og:description" content="多伦多大学电气工程。供电设计、PCB 设计、硬件验证。">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111111'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3ETL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark">TL</span><span class="name">Tianhang Liu</span></a>
+    <div class="links">
+      <a href="#experience">经历</a>
+      <a href="#projects">项目</a>
+      <a href="#life">生活</a>
+      <a href="#now">近况</a>
+    </div>
+    <a class="lang-btn" href="index.html" lang="en" title="Switch to English">EN</a>
+    <button class="theme-btn" id="themeBtn" aria-label="切换深色模式">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot"></span>多伦多大学 · 电气工程 + PEY 实习</p>
+    <h1>Tianhang (Victor) Liu</h1>
+    <p class="lede">我做<b>供电系统</b>和<b>大电流 PCB</b> 设计，从架构、原理图到 Layout、bring-up 和验证，整个流程都做过。我在 <b>Intel</b> 做过 GPU 平台硬件，在 <b>Amazon</b> 做过音频硬件，现在正在为一条人形机器人腿设计供电系统。</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:tianhang.liu@mail.utoronto.ca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        tianhang.liu@mail.utoronto.ca
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/tianhangl" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="focus">
+      <span>电力电子</span><span>大电流 PCB 设计</span><span>GPU 平台</span><span>硬件验证</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="sec-head reveal"><span class="num">01</span><h2>经历</h2><span class="rule"></span></div>
+
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="when">2025.09 – 2026.09</div>
+      <div>
+        <h3>Intel</h3>
+        <p class="role">硬件工程实习生（PEY Co-op）· 独立显卡 · 多伦多</p>
+        <ul>
+          <li>参与 Intel Arc Pro B 系列工作站 GPU 的硬件平台工作。</li>
+          <li>在 AI 和图形负载（GEMM、BERT、Llama、SDXL 等）下测量 GPU 功耗，用板载遥测和外部 DAQ 采集数据，再用 Python 分析。</li>
+          <li>板卡 bring-up 与调试：电源轨瞬态、电容失效、设备识别问题、SMT 返修。</li>
+          <li>为 48 V 串联堆叠式 GPU 供电方案做板级设计（美国专利申请中）：大电流多层 PCB、电源平面损耗分析。</li>
+          <li>编写 Python 脚本，自动化部分原理图和 PCB 审查流程。</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.intel.com/content/www/us/en/products/sku/245797/intel-arc-pro-b70-graphics.html" target="_blank" rel="noopener">Arc Pro B70</a>
+          <a href="https://www.intel.com/content/www/us/en/products/sku/245796/intel-arc-pro-b65-graphics.html" target="_blank" rel="noopener">Arc Pro B65</a>
+          <a href="https://www.intel.com/content/www/us/en/products/sku/243916/intel-arc-pro-b60-graphics.html" target="_blank" rel="noopener">Arc Pro B60</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">2025 夏</div>
+      <div>
+        <h3><a href="https://www.eecg.utoronto.ca/~roman/" target="_blank" rel="noopener">Genov Lab，多伦多大学</a></h3>
+        <p class="role">科研硬件设计 · Intelligent Sensory Microsystems · Roman Genov 教授</p>
+        <ul>
+          <li>为一块 FPGA 核心板（SoM）设计载板：电源树、microSD、PMOD、JTAG 和 USB 转串口（<a href="#carrier">见项目</a>）。</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.eecg.utoronto.ca/~roman/" target="_blank" rel="noopener">实验室主页</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">2024 夏</div>
+      <div>
+        <h3>Amazon Devices</h3>
+        <p class="role">硬件工程实习生 · 音频产品</p>
+        <ul>
+          <li>参与 Echo Dot、Fire TV 等 Amazon 设备的音频硬件工作。</li>
+          <li>用 Altium 设计 MEMS 麦克风阵列 PCB（原理图、布局、低噪声混合信号布线）。</li>
+          <li>用 Audio Precision 和 SoundCheck 做声学验证：频率响应、THD、Rub &amp; Buzz。</li>
+          <li>编写 MATLAB/Python 波束成形和后处理脚本，让声学测量更可重复。</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.amazon.com/echodot" target="_blank" rel="noopener">Echo Dot</a>
+          <a href="https://www.amazon.com/firetv" target="_blank" rel="noopener">Fire TV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">2022 – 2027</div>
+      <div>
+        <h3>多伦多大学</h3>
+        <p class="role">应用科学学士（BASc），电气工程 · PEY Co-op</p>
+        <ul>
+          <li>方向：电力电子、模拟/射频和数字硬件。</li>
+          <li>毕业设计（ECE496）：人形机器人腿的供电架构。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="sec-head reveal"><span class="num">02</span><h2>项目</h2><span class="rule"></span></div>
+
+  <!-- Robot leg (feature) -->
+  <article class="card feature reveal" id="robot-leg">
+    <div class="media">
+      <span class="badge live">● 进行中</span>
+      <svg class="diagram" viewBox="0 0 600 340" role="img" aria-label="简化供电架构：电池和超级电容接到 48 V 直流母线，母线为髋、膝、踝三个关节驱动供电">
+        <!-- battery -->
+        <rect class="box" x="20" y="40" width="150" height="56" rx="8"/>
+        <text x="34" y="64">18650 锂电池组</text><text class="sub" x="34" y="82">BMS · 保险丝 · 采样</text>
+        <path class="wire" d="M170 68 H350"/><path class="flow" d="M170 68 H350"/>
+        <!-- supercap + dcdc -->
+        <rect class="box" x="20" y="150" width="130" height="56" rx="8"/>
+        <text x="34" y="174">超级电容组</text><text class="sub" x="34" y="192">监测 · 均衡</text>
+        <rect class="box hl" x="180" y="150" width="130" height="56" rx="8"/>
+        <text x="194" y="174">双向 DC-DC</text><text class="sub" x="194" y="192">预充电</text>
+        <path class="wire" d="M150 178 H180 M310 178 H350"/>
+        <path class="flow rev" d="M150 178 H180"/><path class="flow rev" d="M310 178 H350"/>
+        <!-- bus -->
+        <rect class="bus" x="350" y="30" width="12" height="210" rx="3"/>
+        <text x="356" y="20" text-anchor="middle">直流母线 · 48 V</text>
+        <!-- joints -->
+        <g>
+          <rect class="box" x="420" y="40" width="160" height="50" rx="8"/><text x="434" y="62">髋关节</text><text class="sub" x="434" y="78">逆变器 · FOC · BLDC</text>
+          <rect class="box" x="420" y="110" width="160" height="50" rx="8"/><text x="434" y="132">膝关节</text><text class="sub" x="434" y="148">逆变器 · FOC · BLDC</text>
+          <rect class="box" x="420" y="180" width="160" height="50" rx="8"/><text x="434" y="202">踝关节</text><text class="sub" x="434" y="218">逆变器 · FOC · BLDC</text>
+          <path class="wire" d="M362 65 H420 M362 135 H420 M362 205 H420"/>
+          <path class="flow" d="M362 65 H420 M362 135 H420 M362 205 H420"/>
+        </g>
+        <!-- control / safety -->
+        <rect class="box" x="20" y="262" width="300" height="40" rx="8" style="stroke:var(--red)"/>
+        <text x="34" y="287">安全联锁 · 急停（不经过 MCU）</text>
+        <path class="safety" d="M245 262 V206 M320 282 H395 V65"/>
+        <rect class="box" x="420" y="262" width="160" height="40" rx="8"/>
+        <text x="434" y="280">主控 MCU · RTOS</text><text class="sub" x="434" y="294">控制 · 遥测 → PC</text>
+        <text class="sub" x="20" y="330"><tspan class="k-fg">━ 功率</tspan>   <tspan class="k-muted">━ 缓冲 / 回馈</tspan>   <tspan class="k-red">┅ 硬线安全信号</tspan></text>
+      </svg>
+    </div>
+    <div class="body">
+      <div class="meta">2026 – 至今 · ECE496 毕业设计</div>
+      <h3>机器人腿供电架构：髋 · 膝 · 踝</h3>
+      <p>一条固定在台架上的机器人腿，三个关节都用 BLDC 电机驱动，挂在 48 V 母线上。我们在比较两种方案：纯电池供电，以及通过双向变换器再接一组超级电容。超级电容负责承担短时的峰值负载，并在关节制动时回收能量。两种方案会在电池峰值电流、母线电压跌落、每次动作的能耗和回收能量上做对比。</p>
+      <div class="tags"><span>48 V</span><span>超级电容</span><span>双向 DC-DC</span><span>BLDC / FOC</span><span>BMS</span></div>
+      <details>
+        <summary>完整框图里有什么</summary>
+        <ul>
+          <li>18650 电池组和 BMS：单体电压采样、NTC、充放电 MOSFET</li>
+          <li>超级电容组带监测和均衡，通过带预充电的双向 DC-DC 接到母线</li>
+          <li>每个关节：保险丝、三相逆变器、FOC 控制器、BLDC 电机、减速箱、编码器</li>
+          <li>配电采样板（母线、电池、超级电容的电压和电流）以及制动斩波器</li>
+          <li>不依赖 MCU 的硬线安全联锁（急停、防护开关、复位）</li>
+          <li>主控 MCU 运行 RTOS，遥测数据传到 PC，并配合 MuJoCo 仿真</li>
+        </ul>
+      </details>
+      <div class="file-links"><a href="assets/robot-leg-block-diagram.pdf" target="_blank">完整系统框图（PDF）</a></div>
+    </div>
+  </article>
+
+  <!-- Stacked VR (feature) -->
+  <article class="card feature reveal" id="stacked-vr">
+    <div class="media contain" style="background:#000">
+      <span class="badge">仅供参考</span>
+      <img src="assets/img/work/stacked-vr.jpg" alt="堆叠式 VR PCB 的早期布局，没有走线和铺铜" loading="lazy" data-caption="仅供参考：没有铺铜，没有走线，也不是最终版本，只用来展示这块板。">
+    </div>
+    <div class="body">
+      <div class="meta">2026 · Intel · <span class="patent">美国专利申请中</span></div>
+      <h3>48 V 串联堆叠式 GPU 供电</h3>
+      <p>八个 GPU 负载串联在 48 V 母线上，每个大约分到 6 V，这样就省掉了常规的 48→12 V 中间转换级。负载不一致时，由开关电容梯形网络维持各节点的电压平衡。我负责这块大电流板：叠层、布局、电源平面和直流损耗分析。</p>
+      <div class="tags"><span>Allegro / OrCAD</span><span>16 层</span><span>2 oz 铜厚</span><span>~50 A</span><span>电源完整性</span></div>
+      <p class="note">图片仅供参考：没有铺铜，没有走线，也不是最终版本，只用来展示这块板。</p>
+    </div>
+  </article>
+
+  <div class="grid">
+
+    <!-- Carrier -->
+    <article class="card reveal" id="carrier">
+      <div class="media"><img src="assets/img/work/carrier-3d.jpg" alt="载板 3D 渲染图" loading="lazy" data-caption="载板 3D 视图"></div>
+      <div class="body">
+        <div class="meta">2025 夏 · Genov Lab，多伦多大学</div>
+        <h3>FPGA 核心板载板</h3>
+        <p>为一块 FPGA 核心板（SoM）设计的载板，通过三个 100-pin 板对板连接器连接。DC 插座输入后，经过一个 5 V Buck（ADP2384）和一个五通道 PMIC（ADP5052），生成模块需要的 I/O 和模拟电源轨，并带有 power-good 和使能时序控制。</p>
+        <div class="tags"><span>Altium</span><span>ADP5052</span><span>电平转换</span><span>USB 转串口</span><span>JTAG</span></div>
+        <details>
+          <summary>更多</summary>
+          <ul>
+            <li>microSD，配 TXS02612 做 1.8/3.3 V 电平转换</li>
+            <li>两个走差分对的 PMOD 接口，一个 JTAG 接口</li>
+            <li>CP2104 USB 转串口，TX/RX 做了电平转换</li>
+            <li>复位和电源按键，以及 power-good、FPGA done 状态灯</li>
+          </ul>
+          <div class="thumbs"><img src="assets/img/work/carrier-layout.jpg" alt="初步布局" loading="lazy" data-caption="初步布局"></div>
+        </details>
+        <div class="file-links"><a href="assets/chip-carrier-schematic.pdf" target="_blank">原理图（PDF）</a></div>
+      </div>
+    </article>
+
+    <!-- Mic array -->
+    <article class="card reveal" id="mic-array">
+      <div class="media"><img src="assets/img/work/mic-array.jpg" alt="MEMS 麦克风阵列板，细节已模糊" loading="lazy" data-caption="麦克风阵列板（细节已模糊）"></div>
+      <div class="body">
+        <div class="meta">2024 夏 · Amazon</div>
+        <h3>MEMS 麦克风阵列板</h3>
+        <p>一块用于音频测试的小型麦克风阵列 PCB。我完成了原理图和布局，让麦克风的供电和信号路径远离数字噪声，并在不同温度和供电条件下用声学测试设备验证了这块板。</p>
+        <div class="tags"><span>Altium</span><span>混合信号</span><span>I²C</span><span>Audio Precision</span><span>MATLAB</span></div>
+        <p class="note">照片做了模糊处理。</p>
+      </div>
+    </article>
+
+    <!-- Class-E -->
+    <article class="card reveal" id="class-e">
+      <div class="media">
+        <svg class="diagram" viewBox="0 0 600 340" role="img" aria-label="简化的 Class-E 功放原理图和漏极电压波形">
+          <!-- waveforms -->
+          <path class="wave" d="M300 80 h40 c10 -72 30 -72 40 0 h40 c10 -72 30 -72 40 0 h40 c10 -72 30 -72 40 0"/>
+          <path class="wave2" d="M300 92 h40 v12 h40 v-12 h40 v12 h40 v-12 h40 v12 h40"/>
+          <text x="548" y="56" class="k-fg">v_DS</text>
+          <text x="548" y="102" class="k-muted">v_GS</text>
+          <!-- supply + RFC -->
+          <text x="106" y="30">V_DD</text>
+          <path class="wire" d="M120 38 V60 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 V140"/>
+          <text class="sub" x="138" y="96">RFC</text>
+          <circle cx="120" cy="140" r="3.5" style="fill:var(--fg)"/>
+          <!-- switch -->
+          <path class="wire" d="M120 140 V175 M120 215 V250 M104 177 V213 M60 195 H104"/>
+          <path class="wire" d="M120 175 V215" style="stroke-width:4;stroke:var(--fg)"/>
+          <path class="wave2" d="M18 205 h8 v-18 h8 v18 h8 v-18 h8 v18 h8"/>
+          <text class="sub" x="14" y="228">14 MHz</text>
+          <!-- shunt C -->
+          <path class="wire" d="M120 140 H190 V186 M174 186 H206 M174 194 H206 M190 194 V250"/>
+          <text class="sub" x="212" y="194">C1</text>
+          <!-- series L0 C0 -->
+          <path class="wire" d="M190 140 H230 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 H316 M316 128 V152 M324 128 V152 M324 140 H360"/>
+          <text class="sub" x="252" y="124">L0</text><text class="sub" x="312" y="120">C0</text>
+          <!-- filter -->
+          <rect class="box hl" x="360" y="116" width="96" height="48" rx="6"/>
+          <text x="372" y="137">Chebyshev</text><text class="sub" x="372" y="153">三阶带通</text>
+          <!-- load -->
+          <path class="wire" d="M456 140 H510 V156 l8 4 -16 8 16 8 -16 8 16 8 -8 4 V250"/>
+          <text class="sub" x="526" y="184">50 Ω</text>
+          <!-- grounds -->
+          <path class="gnd" d="M108 250 H132 M113 256 H127 M118 262 H122 M178 250 H202 M183 256 H197 M188 262 H192 M498 250 H522 M503 256 H517 M508 262 H512"/>
+          <text x="20" y="315">1 W · 14 MHz · THD &lt; 10 %</text>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="meta">2024 · 多伦多大学</div>
+        <h3>14 MHz Class-E 射频功率放大器</h3>
+        <p>一个开关式射频功放，在 14 MHz 下输出 1 W，配合三阶 Chebyshev 带通滤波器把 THD 压到 10% 以下。我完成了从仿真、PCB 布局到实测的全过程，用 PyVISA 脚本自动化测量，并把它集成进一套无线电收发系统。</p>
+        <div class="tags"><span>Class-E</span><span>射频</span><span>ZVS</span><span>PyVISA</span></div>
+        <p class="note">原始设计文件已经丢失，上图是简化的拓扑示意图。</p>
+      </div>
+    </article>
+
+    <!-- Telescope -->
+    <article class="card reveal" id="telescope">
+      <div class="media"><img src="assets/img/work/telescope-roof.jpg" alt="架设在楼顶的喇叭天线射电望远镜" loading="lazy" data-caption="楼顶架设"></div>
+      <div class="body">
+        <div class="meta">2020 · 高中</div>
+        <h3>自制 HI 射电望远镜</h3>
+        <p>一台用来接收中性氢 21 cm 谱线的喇叭天线，参考了 Ewen 和 Purcell 1951 年的原始喇叭。口径 1.5 m × 1.5 m，用货架角钢和 6 mm 网孔的不锈钢焊接网搭成。后端是一个手工制作的波导-同轴转换器，带 N 型接头探针，制作前我先用 HFSS 建了模。</p>
+        <div class="tags"><span>喇叭天线</span><span>21 cm 谱线</span><span>HFSS</span><span>波导</span></div>
+        <details>
+          <summary>照片和演示视频</summary>
+          <div class="thumbs">
+            <img src="assets/img/work/telescope-horn.jpg" alt="从喇叭口往里看" loading="lazy" data-caption="从喇叭口往里看">
+            <img src="assets/img/work/telescope-transition.jpg" alt="波导-同轴转换器" loading="lazy" data-caption="波导-同轴转换器和 N 型探针">
+          </div>
+          <video src="assets/video/radio-telescope.mp4" controls preload="metadata" playsinline style="margin-top:10px;border-radius:8px;width:100%"></video>
+        </details>
+      </div>
+    </article>
+
+    <!-- Nios II -->
+    <article class="card reveal" id="nios">
+      <div class="media"><video src="assets/video/nios2-game.mp4" controls preload="metadata" playsinline muted></video></div>
+      <div class="body">
+        <div class="meta">计算机组成课程</div>
+        <h3>Nios II 处理器上的小游戏</h3>
+        <p>一个为 FPGA 上的 Nios II 软核处理器写的小游戏。</p>
+        <div class="tags"><span>Nios II</span><span>FPGA</span><span>计算机体系结构</span></div>
+      </div>
+    </article>
+
+    <!-- Boulevard -->
+    <article class="card reveal" id="boulevard">
+      <div class="media"><img src="assets/img/work/boulevard.jpg" alt="林荫大道 3D 模型" loading="lazy" data-caption="林荫大道改造，SketchUp"></div>
+      <div class="body">
+        <div class="meta">APS111 · 大一工程设计</div>
+        <h3>林荫大道改造：3D 模型</h3>
+        <p>大一工程设计课上做的街景方案：一条林荫大道，配有带顶棚的座椅、铺装步道和有顶的广场。</p>
+        <div class="tags"><span>SketchUp</span><span>工程设计</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= LIFE ================= -->
+<section id="life">
+  <div class="sec-head reveal"><span class="num">03</span><h2>生活</h2><span class="rule"></span></div>
+  <p class="intro reveal">不在实验台前的时候，我多半在做饭。牛排是我一直想做得更好的菜，不过中式家常菜也做了不少。</p>
+  <div class="gallery">
+    <figure><img src="assets/img/food/food-07.jpg" loading="lazy" alt="切好的肋眼牛排"><figcaption>肋眼牛排，配蒜和迷迭香</figcaption></figure>
+    <figure><img src="assets/img/food/food-09.jpg" loading="lazy" alt="海鲜饭"><figcaption>西班牙海鲜饭</figcaption></figure>
+    <figure><img src="assets/img/food/food-04.jpg" loading="lazy" alt="家常晚饭"><figcaption>一顿工作日晚饭</figcaption></figure>
+    <figure><img src="assets/img/food/food-14.jpg" loading="lazy" alt="蒲烧鳗鱼"><figcaption>蒲烧鳗鱼</figcaption></figure>
+    <figure><img src="assets/img/food/food-01.jpg" loading="lazy" alt="麻辣锅"><figcaption>麻辣锅，油豆腐和豆芽</figcaption></figure>
+    <figure><img src="assets/img/food/food-12.jpg" loading="lazy" alt="舒芙蕾芝士蛋糕"><figcaption>日式舒芙蕾芝士蛋糕</figcaption></figure>
+    <figure><img src="assets/img/food/food-03.jpg" loading="lazy" alt="蒜香炒牛肉"><figcaption>蒜香炒牛肉</figcaption></figure>
+    <figure><img src="assets/img/food/food-05.jpg" loading="lazy" alt="烤牛小排"><figcaption>烤牛小排</figcaption></figure>
+    <figure><img src="assets/img/food/food-08.jpg" loading="lazy" alt="牛排和大虾"><figcaption>牛排、大虾，外加一根香蕉当比例尺</figcaption></figure>
+    <figure><img src="assets/img/food/food-13.jpg" loading="lazy" alt="锅里的西冷牛排"><figcaption>锅里的西冷牛排</figcaption></figure>
+    <figure><img src="assets/img/food/food-06.jpg" loading="lazy" alt="番茄蛋汤"><figcaption>番茄蛋汤和豆腐</figcaption></figure>
+    <figure><img src="assets/img/food/food-11.jpg" loading="lazy" alt="书桌上的牛排"><figcaption>书桌晚餐</figcaption></figure>
+    <figure><img src="assets/img/food/food-02.jpg" loading="lazy" alt="烤牛肉"><figcaption>洋葱蘑菇烤牛肉</figcaption></figure>
+    <figure><img src="assets/img/food/food-10.jpg" loading="lazy" alt="正在煎的肋眼牛排"><figcaption>肋眼牛排，煎第一面</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= NOW ================= -->
+<section id="now">
+  <div class="sec-head reveal"><span class="num">04</span><h2>近况</h2><span class="rule"></span></div>
+  <div class="now-grid">
+    <div class="card reveal"><div class="k">// 学习</div><p>在多伦多大学读最后一年，刚在 Intel 实习完一年回来。</p></div>
+    <div class="card reveal"><div class="k">// 在做</div><p>给超级电容变换器选拓扑，同时在画机器人腿供电板的原理图。</p></div>
+    <div class="card reveal"><div class="k">// 做饭</div><p>还在研究怎么把牛排的外壳煎得更好。</p></div>
+  </div>
+
+  <div class="contact reveal">
+    <h2>聊聊硬件吧。</h2>
+    <p>欢迎交流电力电子、板级设计和 GPU 硬件相关的话题。</p>
+    <div class="cta" style="margin:0">
+      <a class="btn primary" href="mailto:tianhang.liu@mail.utoronto.ca">tianhang.liu@mail.utoronto.ca</a>
+      <a class="btn" href="https://www.linkedin.com/in/tianhangl" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Tianhang (Victor) Liu</span>
+  <span class="mono">页面由 Claude 开发 · 更新于 2026 年 10 月</span>
+</footer>
+
+</div>
+</main>
+
+<dialog id="lightbox"><img alt=""><p></p></dialog>
+
+<script>
+  // theme toggle
+  const root = document.documentElement;
+  document.getElementById('themeBtn').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  // keep the current section when switching language
+  document.querySelector('.lang-btn').addEventListener('click', e => {
+    e.currentTarget.href = e.currentTarget.getAttribute('href').split('#')[0] + location.hash;
+  });
+
+  // nav border on scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10), { passive: true });
+
+  // active section in nav
+  const links = [...document.querySelectorAll('nav .links a')];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => spy.observe(s));
+
+  // reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // lightbox
+  const box = document.getElementById('lightbox');
+  const boxImg = box.querySelector('img'), boxCap = box.querySelector('p');
+  document.querySelectorAll('.media img, .thumbs img, .gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      boxImg.src = img.src;
+      const fc = img.closest('figure')?.querySelector('figcaption');
+      boxCap.textContent = img.dataset.caption || (fc ? fc.textContent : '');
+      box.showModal();
+    });
+  });
+  box.addEventListener('click', () => box.close());
+</script>
+</body>
+</html>

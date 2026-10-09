@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tianhang (Victor) Liu</title>
+<meta name="description" content="Tianhang (Victor) Liu: Electrical Engineering at the University of Toronto. Power delivery, PCB design and hardware validation.">
+<meta property="og:title" content="Tianhang (Victor) Liu">
+<meta property="og:description" content="Electrical Engineering @ UofT. Power delivery, PCB design, hardware validation.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23111111'/%3E%3Ctext x='16' y='21.5' font-family='Arial' font-weight='700' font-size='14' fill='white' text-anchor='middle'%3ETL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+  try { const t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="mark">TL</span><span class="name">Tianhang Liu</span></a>
+    <div class="links">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#life">Life</a>
+      <a href="#now">Now</a>
+    </div>
+    <a class="lang-btn" href="zh.html" lang="zh-CN" title="切换到中文">中文</a>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot"></span>Electrical Engineering + PEY · University of Toronto</p>
+    <h1>Tianhang (Victor) Liu</h1>
+    <p class="lede">I design <b>power delivery</b> and <b>high-current PCBs</b>, taking them from architecture and schematics through layout, bring-up and validation. I've built GPU platform hardware at <b>Intel</b> and audio hardware at <b>Amazon</b>, and I'm now designing the power system for a humanoid robot leg.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:tianhang.liu@mail.utoronto.ca">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        tianhang.liu@mail.utoronto.ca
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/tianhangl" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div class="focus">
+      <span>Power electronics</span><span>High-current PCB design</span><span>GPU platforms</span><span>Hardware validation</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="sec-head reveal"><span class="num">01</span><h2>Experience</h2><span class="rule"></span></div>
+
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="when">Sep 2025 – Sep 2026</div>
+      <div>
+        <h3>Intel</h3>
+        <p class="role">Hardware Engineering Intern (PEY Co-op) · Discrete GPU · Toronto</p>
+        <ul>
+          <li>Worked on the hardware platform for Intel Arc Pro B-series workstation GPUs.</li>
+          <li>Measured GPU power under AI and graphics workloads (GEMM, BERT, Llama, SDXL…) using on-board telemetry and an external DAQ, then analyzed the data in Python.</li>
+          <li>Board bring-up and debug: rail transients, capacitor failures, detection issues, SMT rework.</li>
+          <li>Board design for a 48 V series-stacked GPU power-delivery concept (US patent pending): high-current multilayer PCB, power-plane loss analysis.</li>
+          <li>Wrote Python scripts that automate parts of schematic and PCB review.</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.intel.com/content/www/us/en/products/sku/245797/intel-arc-pro-b70-graphics.html" target="_blank" rel="noopener">Arc Pro B70</a>
+          <a href="https://www.intel.com/content/www/us/en/products/sku/245796/intel-arc-pro-b65-graphics.html" target="_blank" rel="noopener">Arc Pro B65</a>
+          <a href="https://www.intel.com/content/www/us/en/products/sku/243916/intel-arc-pro-b60-graphics.html" target="_blank" rel="noopener">Arc Pro B60</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">Summer 2025</div>
+      <div>
+        <h3><a href="https://www.eecg.utoronto.ca/~roman/" target="_blank" rel="noopener">Genov Lab, University of Toronto</a></h3>
+        <p class="role">Research Hardware Designer · Intelligent Sensory Microsystems · Prof. Roman Genov</p>
+        <ul>
+          <li>Designed a carrier board for an FPGA system-on-module: power tree, microSD, PMOD, JTAG and USB-UART (<a href="#carrier">see project</a>).</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.eecg.utoronto.ca/~roman/" target="_blank" rel="noopener">Lab website</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">Summer 2024</div>
+      <div>
+        <h3>Amazon Devices</h3>
+        <p class="role">Hardware Engineering Intern · Audio Products</p>
+        <ul>
+          <li>Audio hardware for Amazon devices such as Echo Dot and Fire TV.</li>
+          <li>Designed a MEMS microphone-array PCB in Altium (schematic, layout, low-noise mixed-signal routing).</li>
+          <li>Acoustic validation with Audio Precision and SoundCheck: frequency response, THD, Rub &amp; Buzz.</li>
+          <li>Wrote MATLAB/Python beamforming and post-processing scripts to make acoustic measurements more repeatable.</li>
+        </ul>
+        <div class="chips">
+          <a href="https://www.amazon.com/echodot" target="_blank" rel="noopener">Echo Dot</a>
+          <a href="https://www.amazon.com/firetv" target="_blank" rel="noopener">Fire TV</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item reveal">
+      <div class="when">2022 – 2027</div>
+      <div>
+        <h3>University of Toronto</h3>
+        <p class="role">BASc, Electrical Engineering · PEY Co-op</p>
+        <ul>
+          <li>Power electronics, analog/RF and digital hardware.</li>
+          <li>Capstone (ECE496): humanoid robot leg power architecture.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="sec-head reveal"><span class="num">02</span><h2>Projects</h2><span class="rule"></span></div>
+
+  <!-- Robot leg (feature) -->
+  <article class="card feature reveal" id="robot-leg">
+    <div class="media">
+      <span class="badge live">● in progress</span>
+      <svg class="diagram" viewBox="0 0 600 340" role="img" aria-label="Simplified power architecture: battery and supercapacitor feeding a 48 V DC bus that powers hip, knee and ankle drives">
+        <!-- battery -->
+        <rect class="box" x="20" y="40" width="150" height="56" rx="8"/>
+        <text x="34" y="64">18650 Li-ion pack</text><text class="sub" x="34" y="82">BMS · fuse · sense</text>
+        <path class="wire" d="M170 68 H350"/><path class="flow" d="M170 68 H350"/>
+        <!-- supercap + dcdc -->
+        <rect class="box" x="20" y="150" width="130" height="56" rx="8"/>
+        <text x="34" y="174">Supercap bank</text><text class="sub" x="34" y="192">monitor · balance</text>
+        <rect class="box hl" x="180" y="150" width="130" height="56" rx="8"/>
+        <text x="194" y="174">Bidirectional</text><text class="sub" x="194" y="192">DC-DC · precharge</text>
+        <path class="wire" d="M150 178 H180 M310 178 H350"/>
+        <path class="flow rev" d="M150 178 H180"/><path class="flow rev" d="M310 178 H350"/>
+        <!-- bus -->
+        <rect class="bus" x="350" y="30" width="12" height="210" rx="3"/>
+        <text x="356" y="20" text-anchor="middle">DC bus · 48 V</text>
+        <!-- joints -->
+        <g>
+          <rect class="box" x="420" y="40" width="160" height="50" rx="8"/><text x="434" y="62">Hip</text><text class="sub" x="434" y="78">inverter · FOC · BLDC</text>
+          <rect class="box" x="420" y="110" width="160" height="50" rx="8"/><text x="434" y="132">Knee</text><text class="sub" x="434" y="148">inverter · FOC · BLDC</text>
+          <rect class="box" x="420" y="180" width="160" height="50" rx="8"/><text x="434" y="202">Ankle</text><text class="sub" x="434" y="218">inverter · FOC · BLDC</text>
+          <path class="wire" d="M362 65 H420 M362 135 H420 M362 205 H420"/>
+          <path class="flow" d="M362 65 H420 M362 135 H420 M362 205 H420"/>
+        </g>
+        <!-- control / safety -->
+        <rect class="box" x="20" y="262" width="300" height="40" rx="8" style="stroke:var(--red)"/>
+        <text x="34" y="287">Safety interlock · E-stop (no MCU)</text>
+        <path class="safety" d="M245 262 V206 M320 282 H395 V65"/>
+        <rect class="box" x="420" y="262" width="160" height="40" rx="8"/>
+        <text x="434" y="280">Main MCU · RTOS</text><text class="sub" x="434" y="294">control · telemetry → PC</text>
+        <text class="sub" x="20" y="330"><tspan class="k-fg">━ power</tspan>   <tspan class="k-muted">━ buffer / regen</tspan>   <tspan class="k-red">┅ hardwired safety</tspan></text>
+      </svg>
+    </div>
+    <div class="body">
+      <div class="meta">2026 – now · ECE496 capstone</div>
+      <h3>Robot leg power architecture: hip, knee, ankle</h3>
+      <p>A mounted robot leg with three BLDC joints on a 48 V bus. We are comparing a plain battery-powered version with one that adds a supercapacitor bank through a bidirectional converter. The supercap covers short peak loads and absorbs regenerated energy when the joints brake. The two versions are compared on peak battery current, bus sag, energy per movement and recovered energy.</p>
+      <div class="tags"><span>48 V</span><span>supercapacitor</span><span>bidirectional DC-DC</span><span>BLDC / FOC</span><span>BMS</span></div>
+      <details>
+        <summary>What's in the full block diagram</summary>
+        <ul>
+          <li>18650 pack with BMS: cell taps, NTCs, charge/discharge FETs</li>
+          <li>Supercap stack with monitoring and balancing, connected through a bidirectional DC-DC with precharge</li>
+          <li>Per joint: fuse, 3-phase inverter, FOC controller, BLDC motor, gearbox, encoder</li>
+          <li>Power-distribution sense board (bus, battery and supercap V and I) and a brake chopper</li>
+          <li>Hardwired safety interlock (E-stop, guard switch, reset) that works without the MCU</li>
+          <li>RTOS on the main MCU, with telemetry logged to a PC alongside a MuJoCo simulation</li>
+        </ul>
+      </details>
+      <div class="file-links"><a href="assets/robot-leg-block-diagram.pdf" target="_blank">Full block diagram (PDF)</a></div>
+    </div>
+  </article>
+
+  <!-- Stacked VR (feature) -->
+  <article class="card feature reveal" id="stacked-vr">
+    <div class="media contain" style="background:#000">
+      <span class="badge">reference only</span>
+      <img src="assets/img/work/stacked-vr.jpg" alt="Early placement study of the stacked VR PCB, without routing or copper pours" loading="lazy" data-caption="Just for reference: no copper pours, no routing, not the final version. Shown only to illustrate the board.">
+    </div>
+    <div class="body">
+      <div class="meta">2026 · Intel · <span class="patent">US patent pending</span></div>
+      <h3>48 V series-stacked GPU power delivery</h3>
+      <p>Eight GPU loads stacked in series across a 48 V bus, so each one sees about 6 V and the usual 48→12 V intermediate stage is removed. A switched-capacitor ladder keeps the node voltages balanced when the loads don't match. I worked on the high-current board: stackup, placement, power planes and DC-loss analysis.</p>
+      <div class="tags"><span>Allegro / OrCAD</span><span>16-layer</span><span>2 oz Cu</span><span>~50 A</span><span>power integrity</span></div>
+      <p class="note">The image is just for reference. It has no copper pours and no routing, and it isn't the final version. It's shown only to illustrate the board.</p>
+    </div>
+  </article>
+
+  <div class="grid">
+
+    <!-- Carrier -->
+    <article class="card reveal" id="carrier">
+      <div class="media"><img src="assets/img/work/carrier-3d.jpg" alt="3D render of the carrier board" loading="lazy" data-caption="Carrier board: 3D view"></div>
+      <div class="body">
+        <div class="meta">Summer 2025 · Genov Lab, UofT</div>
+        <h3>FPGA SoM carrier board</h3>
+        <p>A carrier for an FPGA system-on-module that plugs in through three 100-pin board-to-board connectors. A barrel jack feeds a 5 V buck (ADP2384) and a 5-channel PMIC (ADP5052) for the module's I/O and analog rails, with power-good and enable sequencing.</p>
+        <div class="tags"><span>Altium</span><span>ADP5052</span><span>level shifting</span><span>USB-UART</span><span>JTAG</span></div>
+        <details>
+          <summary>More</summary>
+          <ul>
+            <li>microSD with a TXS02612 1.8/3.3 V level translator</li>
+            <li>Two PMOD headers on differential pairs and a JTAG header</li>
+            <li>CP2104 USB-UART with level-shifted TX/RX</li>
+            <li>Reset and power buttons, and status LEDs for power-good and FPGA done</li>
+          </ul>
+          <div class="thumbs"><img src="assets/img/work/carrier-layout.jpg" alt="Preliminary placement" loading="lazy" data-caption="Preliminary placement"></div>
+        </details>
+        <div class="file-links"><a href="assets/chip-carrier-schematic.pdf" target="_blank">Schematic (PDF)</a></div>
+      </div>
+    </article>
+
+    <!-- Mic array -->
+    <article class="card reveal" id="mic-array">
+      <div class="media"><img src="assets/img/work/mic-array.jpg" alt="MEMS microphone array board, details blurred" loading="lazy" data-caption="Microphone-array board (details blurred)"></div>
+      <div class="body">
+        <div class="meta">Summer 2024 · Amazon</div>
+        <h3>MEMS microphone array board</h3>
+        <p>A small microphone-array PCB for audio testing. I did the schematic and layout, keeping the microphone supplies and signal paths clear of digital noise, and validated the board on acoustic test equipment across temperature and supply variation.</p>
+        <div class="tags"><span>Altium</span><span>mixed-signal</span><span>I²C</span><span>Audio Precision</span><span>MATLAB</span></div>
+        <p class="note">The photo is blurred on purpose.</p>
+      </div>
+    </article>
+
+    <!-- Class-E -->
+    <article class="card reveal" id="class-e">
+      <div class="media">
+        <svg class="diagram" viewBox="0 0 600 340" role="img" aria-label="Simplified Class-E amplifier schematic with drain voltage waveform">
+          <!-- waveforms -->
+          <path class="wave" d="M300 80 h40 c10 -72 30 -72 40 0 h40 c10 -72 30 -72 40 0 h40 c10 -72 30 -72 40 0"/>
+          <path class="wave2" d="M300 92 h40 v12 h40 v-12 h40 v12 h40 v-12 h40 v12 h40"/>
+          <text x="548" y="56" class="k-fg">v_DS</text>
+          <text x="548" y="102" class="k-muted">v_GS</text>
+          <!-- supply + RFC -->
+          <text x="106" y="30">V_DD</text>
+          <path class="wire" d="M120 38 V60 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 a10 7.5 0 0 1 0 15 V140"/>
+          <text class="sub" x="138" y="96">RFC</text>
+          <circle cx="120" cy="140" r="3.5" style="fill:var(--fg)"/>
+          <!-- switch -->
+          <path class="wire" d="M120 140 V175 M120 215 V250 M104 177 V213 M60 195 H104"/>
+          <path class="wire" d="M120 175 V215" style="stroke-width:4;stroke:var(--fg)"/>
+          <path class="wave2" d="M18 205 h8 v-18 h8 v18 h8 v-18 h8 v18 h8"/>
+          <text class="sub" x="14" y="228">14 MHz</text>
+          <!-- shunt C -->
+          <path class="wire" d="M120 140 H190 V186 M174 186 H206 M174 194 H206 M190 194 V250"/>
+          <text class="sub" x="212" y="194">C1</text>
+          <!-- series L0 C0 -->
+          <path class="wire" d="M190 140 H230 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 a7.5 9 0 0 1 15 0 H316 M316 128 V152 M324 128 V152 M324 140 H360"/>
+          <text class="sub" x="252" y="124">L0</text><text class="sub" x="312" y="120">C0</text>
+          <!-- filter -->
+          <rect class="box hl" x="360" y="116" width="96" height="48" rx="6"/>
+          <text x="372" y="137">Chebyshev</text><text class="sub" x="372" y="153">3rd-order BPF</text>
+          <!-- load -->
+          <path class="wire" d="M456 140 H510 V156 l8 4 -16 8 16 8 -16 8 16 8 -8 4 V250"/>
+          <text class="sub" x="526" y="184">50 Ω</text>
+          <!-- grounds -->
+          <path class="gnd" d="M108 250 H132 M113 256 H127 M118 262 H122 M178 250 H202 M183 256 H197 M188 262 H192 M498 250 H522 M503 256 H517 M508 262 H512"/>
+          <text x="20" y="315">1 W · 14 MHz · THD &lt; 10 %</text>
+        </svg>
+      </div>
+      <div class="body">
+        <div class="meta">2024 · UofT</div>
+        <h3>14 MHz Class-E RF power amplifier</h3>
+        <p>A switching RF power amplifier that delivers 1 W at 14 MHz. A 3rd-order Chebyshev band-pass filter keeps THD under 10%. I took it from simulation through PCB layout to bench testing, used PyVISA scripts to automate the measurements, and integrated it into a radio transceiver.</p>
+        <div class="tags"><span>Class-E</span><span>RF</span><span>ZVS</span><span>PyVISA</span></div>
+        <p class="note">The original design files are lost, so the drawing above is a simplified sketch of the topology.</p>
+      </div>
+    </article>
+
+    <!-- Motor -->
+    <article class="card reveal" id="motor">
+      <div class="media"><img src="assets/img/work/motor-board.jpg" alt="Motor controller board with OLED and gear motor" loading="lazy" data-caption="Running: 12.5 V, 0.98 A on the display"></div>
+      <div class="body">
+        <div class="meta">Personal project</div>
+        <h3>Digital brushed-DC gear-motor controller</h3>
+        <p>A motor-control board I designed and assembled. The STM32F103 drives an L298N H-bridge with PWM and reads the motor's encoder. An LM2596 steps the 12 V input down to 5 V. The OLED shows live voltage, current, power, mAh and run time, and four buttons set the target.</p>
+        <div class="tags"><span>STM32F103</span><span>L298N</span><span>LM2596</span><span>OLED</span><span>EasyEDA</span></div>
+      </div>
+    </article>
+
+    <!-- Telescope -->
+    <article class="card reveal" id="telescope">
+      <div class="media"><img src="assets/img/work/telescope-roof.jpg" alt="Horn antenna radio telescope on a rooftop" loading="lazy" data-caption="Rooftop setup"></div>
+      <div class="body">
+        <div class="meta">2020 · high school</div>
+        <h3>Hand-built HI radio telescope</h3>
+        <p>A horn antenna for the 21 cm neutral-hydrogen line, based on Ewen and Purcell's 1951 horn. The aperture is 1.5 m × 1.5 m, made of slotted angle steel and 6 mm stainless mesh. It feeds a hand-made waveguide-to-coax transition with an N-type probe that I modelled in HFSS first.</p>
+        <div class="tags"><span>horn antenna</span><span>21 cm line</span><span>HFSS</span><span>waveguide</span></div>
+        <details>
+          <summary>Photos &amp; demo video</summary>
+          <div class="thumbs">
+            <img src="assets/img/work/telescope-horn.jpg" alt="Looking down the horn" loading="lazy" data-caption="Looking down the horn">
+            <img src="assets/img/work/telescope-transition.jpg" alt="Waveguide to coax transition" loading="lazy" data-caption="Waveguide–coax transition with N-type probe">
+          </div>
+          <video src="assets/video/radio-telescope.mp4" controls preload="metadata" playsinline style="margin-top:10px;border-radius:8px;width:100%"></video>
+        </details>
+      </div>
+    </article>
+
+    <!-- Nios II -->
+    <article class="card reveal" id="nios">
+      <div class="media"><video src="assets/video/nios2-game.mp4" controls preload="metadata" playsinline muted></video></div>
+      <div class="body">
+        <div class="meta">Computer organization course</div>
+        <h3>Mini game on a Nios II processor</h3>
+        <p>A small game written for a Nios II soft-core processor running on an FPGA board.</p>
+        <div class="tags"><span>Nios II</span><span>FPGA</span><span>computer architecture</span></div>
+      </div>
+    </article>
+
+    <!-- Boulevard -->
+    <article class="card reveal" id="boulevard">
+      <div class="media"><img src="assets/img/work/boulevard.jpg" alt="3D model of a tree-lined boulevard" loading="lazy" data-caption="Boulevard redesign, SketchUp"></div>
+      <div class="body">
+        <div class="meta">APS111 · first-year design</div>
+        <h3>Boulevard redesign: 3D model</h3>
+        <p>A streetscape concept from first-year engineering design: a tree-lined boulevard with sheltered seating, a paved walkway and a covered plaza.</p>
+        <div class="tags"><span>SketchUp</span><span>engineering design</span></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= LIFE ================= -->
+<section id="life">
+  <div class="sec-head reveal"><span class="num">03</span><h2>Life</h2><span class="rule"></span></div>
+  <p class="intro reveal">When I'm not at a bench, I'm usually cooking. Steak is the thing I keep trying to get better at, but there's plenty of Chinese home cooking too.</p>
+  <div class="gallery">
+    <figure><img src="assets/img/food/food-07.jpg" loading="lazy" alt="Sliced ribeye with garlic and rosemary"><figcaption>Ribeye, garlic, rosemary</figcaption></figure>
+    <figure><img src="assets/img/food/food-09.jpg" loading="lazy" alt="Seafood paella"><figcaption>Seafood paella</figcaption></figure>
+    <figure><img src="assets/img/food/food-04.jpg" loading="lazy" alt="Chinese home dinner"><figcaption>A weeknight dinner</figcaption></figure>
+    <figure><img src="assets/img/food/food-14.jpg" loading="lazy" alt="Glazed eel"><figcaption>Glazed eel (unagi)</figcaption></figure>
+    <figure><img src="assets/img/food/food-01.jpg" loading="lazy" alt="Spicy pot"><figcaption>Spicy pot with tofu puffs and bean sprouts</figcaption></figure>
+    <figure><img src="assets/img/food/food-12.jpg" loading="lazy" alt="Soufflé cheesecake"><figcaption>Japanese soufflé cheesecake</figcaption></figure>
+    <figure><img src="assets/img/food/food-03.jpg" loading="lazy" alt="Stir-fried beef"><figcaption>Stir-fried beef with garlic</figcaption></figure>
+    <figure><img src="assets/img/food/food-05.jpg" loading="lazy" alt="Short ribs"><figcaption>Oven-roasted short ribs</figcaption></figure>
+    <figure><img src="assets/img/food/food-08.jpg" loading="lazy" alt="Steak and shrimp"><figcaption>Steak, shrimp, and a banana for scale</figcaption></figure>
+    <figure><img src="assets/img/food/food-13.jpg" loading="lazy" alt="Strip steak in a pan"><figcaption>Strip steak in the pan</figcaption></figure>
+    <figure><img src="assets/img/food/food-06.jpg" loading="lazy" alt="Tomato egg soup"><figcaption>Tomato egg soup and tofu</figcaption></figure>
+    <figure><img src="assets/img/food/food-11.jpg" loading="lazy" alt="Steak at the desk"><figcaption>Desk dinner</figcaption></figure>
+    <figure><img src="assets/img/food/food-02.jpg" loading="lazy" alt="Beef bake"><figcaption>Beef, onion and mushroom bake</figcaption></figure>
+    <figure><img src="assets/img/food/food-10.jpg" loading="lazy" alt="Ribeye searing"><figcaption>Ribeye, first side</figcaption></figure>
+  </div>
+</section>
+
+<!-- ================= NOW ================= -->
+<section id="now">
+  <div class="sec-head reveal"><span class="num">04</span><h2>Now</h2><span class="rule"></span></div>
+  <div class="now-grid">
+    <div class="card reveal"><div class="k">// studying</div><p>Final year at U of T, back from a year at Intel.</p></div>
+    <div class="card reveal"><div class="k">// building</div><p>Choosing a topology for the supercap converter and drawing schematics for the robot leg's power board.</p></div>
+    <div class="card reveal"><div class="k">// cooking</div><p>Still working on a better crust on my steaks.</p></div>
+  </div>
+
+  <div class="contact reveal">
+    <h2>Let's talk hardware.</h2>
+    <p>Open to conversations about power electronics, board design and GPU hardware.</p>
+    <div class="cta" style="margin:0">
+      <a class="btn primary" href="mailto:tianhang.liu@mail.utoronto.ca">tianhang.liu@mail.utoronto.ca</a>
+      <a class="btn" href="https://www.linkedin.com/in/tianhangl" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 Tianhang (Victor) Liu</span>
+  <span class="mono">Page developed by Claude · updated Oct 2026</span>
+  <div class="egg-row">
+    <a class="egg" href="travel.html" aria-label="A small surprise: the travel page">
+      <svg class="plane" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+      <span>psst… there's a hidden page. Click the plane, or just type <kbd>fly</kbd></span>
+    </a>
+  </div>
+</footer>
+
+</div>
+</main>
+
+<dialog id="lightbox"><img alt=""><p></p></dialog>
+
+<script>
+  // theme toggle
+  const root = document.documentElement;
+  document.getElementById('themeBtn').addEventListener('click', () => {
+    const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme = dark ? 'light' : 'dark';
+    try { localStorage.setItem('theme', root.dataset.theme); } catch (e) {}
+  });
+
+  // keep the current section when switching language
+  document.querySelector('.lang-btn').addEventListener('click', e => {
+    e.currentTarget.href = e.currentTarget.getAttribute('href').split('#')[0] + location.hash;
+  });
+
+  // easter egg: type "fly" anywhere to open the travel page
+  let typed = '';
+  addEventListener('keydown', e => {
+    if (e.target.closest('input, textarea') || e.key.length !== 1) return;
+    typed = (typed + e.key.toLowerCase()).slice(-3);
+    if (typed === 'fly') location.href = 'travel.html';
+  });
+
+  // nav border on scroll
+  const nav = document.getElementById('nav');
+  addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10), { passive: true });
+
+  // active section in nav
+  const links = [...document.querySelectorAll('nav .links a')];
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.hash === '#' + e.target.id));
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('section[id]').forEach(s => spy.observe(s));
+
+  // reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // lightbox
+  const box = document.getElementById('lightbox');
+  const boxImg = box.querySelector('img'), boxCap = box.querySelector('p');
+  document.querySelectorAll('.media img, .thumbs img, .gallery img').forEach(img => {
+    img.addEventListener('click', () => {
+      boxImg.src = img.src;
+      const fc = img.closest('figure')?.querySelector('figcaption');
+      boxCap.textContent = img.dataset.caption || (fc ? fc.textContent : '');
+      box.showModal();
+    });
+  });
+  box.addEventListener('click', () => box.close());
+</script>
+</body>
+</html>
