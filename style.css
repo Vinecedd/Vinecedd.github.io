@@ -144,6 +144,31 @@ section { padding: 80px 0 24px; }
 .tl-item .when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); padding-top: 4px; }
 .tl-item h3 { font-family: var(--display); font-weight: 600; font-size: 21px; margin: 0; letter-spacing: -0.015em; }
 .tl-item h3 a { color: var(--fg); }
+.tl-item h3 { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; }
+
+/* company logos sit in small white tiles (same in both themes, like app icons):
+   monochrome by default, brand colour when the entry is hovered */
+.co {
+  display: inline-grid; place-items: center; flex: none; width: 36px; height: 36px; border-radius: 9px;
+  background: #fff; border: 1px solid var(--line); box-shadow: 0 1px 2px rgb(0 0 0 / 0.06);
+  transition: transform .3s;
+}
+:root[data-theme="dark"] .co { background: #ececec; border-color: transparent; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .co { background: #ececec; border-color: transparent; } }
+.tl-item:hover .co { transform: translateY(-1px); }
+.logo {
+  display: block; background: #161616;
+  -webkit-mask: var(--src) center / contain no-repeat; mask: var(--src) center / contain no-repeat;
+  transition: background-color .3s;
+}
+.logo-intel  { --src: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/intel.svg");  --brand: #0068b5;
+  width: 28px; height: 14px; -webkit-mask-size: 28px 28px; mask-size: 28px 28px; }  /* square viewBox, wide wordmark */
+.logo-amazon { --src: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/amazon.svg"); --brand: #ff9900;
+  width: 22px; height: 22px; }
+.tl-item:hover .logo { background: var(--brand); }
+/* the arms are tall (tree above the shield): crop to the shield and enlarge */
+.logo-crest { width: 32px; height: 32px; object-fit: cover; object-position: 50% 58%; filter: grayscale(1) contrast(1.15); transition: filter .3s; }
+.tl-item:hover .logo-crest { filter: none; }
 .tl-item .role { color: var(--muted); margin: 2px 0 12px; font-size: 15px; }
 .tl-item ul { margin: 0; padding-left: 18px; }
 .tl-item li { margin-bottom: 5px; }
